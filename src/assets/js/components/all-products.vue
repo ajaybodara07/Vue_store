@@ -33,8 +33,8 @@
     </div>
 </template>
 
+// add script data
 <script>
-
     export default{
         data(){
             return{

@@ -29,6 +29,7 @@
     </div>
 </template>
 
+// create script data
 <script>
     import Notification from './notifications.vue';
 

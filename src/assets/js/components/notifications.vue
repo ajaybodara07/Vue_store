@@ -6,6 +6,7 @@
     </div>
 </template>
 
+// notification data
 <script>
     export default{
         data(){

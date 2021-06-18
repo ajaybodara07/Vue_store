@@ -12,6 +12,7 @@
     </div>
 </template>
 
+// delete script data
 <script>
     import Notification from './notifications.vue';
 

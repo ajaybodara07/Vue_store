@@ -85,7 +85,6 @@ app.post('/api/product/create', function(req, res) {
 app.patch('/api/product/edit/:id', function(req, res) {
     fs.readFile(PRODUCTS_FILE, function(err, data) {
         if (err) {
-            console.error(err);
             process.exit(1);
         }
         var products = JSON.parse(data);
@@ -103,7 +102,6 @@ app.patch('/api/product/edit/:id', function(req, res) {
 
                 fs.writeFile(PRODUCTS_FILE, JSON.stringify(products, null, 4), function(err) {
                     if (err) {
-                        console.error(err);
                         process.exit(1);
                     }
                     res.json(products);
@@ -117,7 +115,6 @@ app.patch('/api/product/edit/:id', function(req, res) {
 app.delete('/api/product/delete/:id', function(req, res) {
     fs.readFile(PRODUCTS_FILE, function(err, data) {
         if (err) {
-            console.error(err);
             process.exit(1);
         }
         var products = JSON.parse(data);
@@ -130,7 +127,6 @@ app.delete('/api/product/delete/:id', function(req, res) {
 
                 fs.writeFile(PRODUCTS_FILE, JSON.stringify(products, null, 4), function(err) {
                     if (err) {
-                        console.error(err);
                         process.exit(1);
                     }
                     res.json(products);
